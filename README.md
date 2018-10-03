@@ -8,6 +8,8 @@ If you have a page of basic, unstyled HTML, and want to do almost no work, just 
 - Bare minimum number of changes on top of `normalize.css`.
 - Almost no classes, just add boring style to basic HTML tags.
 
+Use the `page` class to restrict the main portion of the page to a readable line length.
+
 ## Changes
 
 1. Apply `border-box` sizing to all elements.
