@@ -3,6 +3,8 @@
 An extremely boring set of CSS.
 If you have a page of basic, unstyled HTML, and want to do almost no work, just pop this in.
 
+`<link rel="stylesheet" href="https://heiskr.com/drab.css/css/drab.css">`
+
 ## Goals
 
 - Bare minimum number of changes on top of `normalize.css`.
