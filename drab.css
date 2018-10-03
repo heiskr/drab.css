@@ -360,7 +360,7 @@ template {
 
 
 
-/* 2. Apply more common and attractive fonts. */
+/* 2. Apply system fonts. */
 
 body, input, textarea, button {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
@@ -373,7 +373,7 @@ pre, code, samp, kbd, var,
 
 
 
-/* 3. Apply more common `line-height` and use an 8px vertical rhythm. */
+/* 3. Apply more common `line-height` and use an `8px` vertical rhythm. */
 
 body, input, textarea, button {
   line-height: 1.5;
@@ -436,7 +436,7 @@ blockquote {
 
 
 
-/* 4. Tighten left on list like elements. */
+/* 5. Tighten left on list like elements. */
 
 ul, ol {
   padding-left: 1.5rem;
@@ -448,7 +448,7 @@ dd {
 
 
 
-/* 5. Apply more common spacing on `table`s. */
+/* 6. Apply more common spacing on `table`s. */
 
 table {
   border-spacing: 0;
@@ -464,7 +464,7 @@ th {
 
 
 
-/* 6. Use more common, consistent, and attractive colors */
+/* 7. Use more common, consistent, and attractive colors */
 
 body, input, textarea, button {
   color: #111;
@@ -492,7 +492,7 @@ mark {
 
 
 
-/* 7. Style and color buttons to look more like web buttons. */
+/* 8. Style and color buttons to look more like web buttons. */
 
 button, [type=submit], [type=button], [type=reset] {
   border: 0;
@@ -524,7 +524,7 @@ button:disabled, [type=submit]:disabled, [type=button]:disabled, [type=reset]:di
 
 
 
-/* 8. Change the look of caption text. */
+/* 9. Change the look of caption text. */
 
 caption, figcaption {
   font-style: italic;
@@ -532,7 +532,7 @@ caption, figcaption {
 
 
 
-/* 9. Make strikethroughs more obvious. */
+/* 10. Make strikethroughs more obvious. */
 
 del, s {
   color: #666;
@@ -540,7 +540,7 @@ del, s {
 
 
 
-/* 10. Soften the shape of big boxy elements. */
+/* 11. Soften the shape of big boxy elements. */
 
 code, samp, kbd, mark {
   padding: 0.25rem;
@@ -557,7 +557,7 @@ mark {
 
 
 
-/* 11. Finally, limit width on a high element so text is more readable. (The only class!) */
+/* 12. Finally, limit width on a high element so text is more readable. (The only class!) */
 
 .page {
   margin: 0 auto;
