@@ -464,7 +464,22 @@ th {
 
 
 
-/* 7. Use more common, consistent, and attractive colors */
+/* 7. Constrain images and iframes to size */
+
+img, iframe { 
+   max-width: 100%;
+}
+
+
+
+/* 8. Add spacing to sectional elements */
+
+header, section, footer { 
+   margin: 4rem 0; 
+}
+
+
+/* 9. Use more common, consistent, and attractive colors */
 
 body, input, textarea, button {
   color: #111;
@@ -492,7 +507,7 @@ mark {
 
 
 
-/* 8. Style and color buttons to look more like web buttons. */
+/* 10. Style and color buttons to look more like web buttons. */
 
 button, [type=submit], [type=button], [type=reset] {
   border: 0;
@@ -524,7 +539,7 @@ button:disabled, [type=submit]:disabled, [type=button]:disabled, [type=reset]:di
 
 
 
-/* 9. Change the look of caption text. */
+/* 11. Change the look of caption text. */
 
 caption, figcaption {
   font-style: italic;
@@ -532,7 +547,7 @@ caption, figcaption {
 
 
 
-/* 10. Make strikethroughs more obvious. */
+/* 12. Make strikethroughs more obvious. */
 
 del, s {
   color: #666;
@@ -540,7 +555,7 @@ del, s {
 
 
 
-/* 11. Soften the shape of big boxy elements. */
+/* 13. Soften the shape of big boxy elements. */
 
 code, samp, kbd, mark {
   padding: 0.25rem;
@@ -557,7 +572,7 @@ mark {
 
 
 
-/* 12. Finally, limit width on a high element so text is more readable. (The only class!) */
+/* 14. Finally, limit width on a high element so text is more readable. (The only class!) */
 
 .page {
   margin: 0 auto;
