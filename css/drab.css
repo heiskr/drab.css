@@ -409,10 +409,7 @@ blockquote {
   margin-left: 0;
 }
 
-legend, input, textarea {
-  padding: 0 0.5rem;
-}
-
+legend, input, textarea,
 button, [type=submit], [type=button], [type=reset] {
   padding: 0.25rem 1rem;
 }
