@@ -464,6 +464,11 @@ th, td {
 
 th {
   text-align: left;
+  vertical-align: bottom;
+}
+
+td {
+  vertical-align: top;
 }
 
 
