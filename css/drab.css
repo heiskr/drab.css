@@ -413,6 +413,10 @@ legend, input, textarea {
   padding: 0.25rem 0.5rem;
 }
 
+input, textarea {
+  padding: calc(0.25rem - 1px) calc(0.5rem - 1px);
+}
+
 button, [type=submit], [type=button], [type=reset] {
   padding: 0.25rem 1rem;
 }
