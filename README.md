@@ -22,9 +22,11 @@ See a plain HTML page [before](https://heiskr.com/drab.css/demo/before) and [aft
 4. Use consistent border sizes and styles.
 5. Tighten left on list like elements.
 6. Apply more common spacing on `table`s.
-7. Use more common, consistent, and attractive colors.
-8. Style and color buttons to look more like web buttons.
-9. Change the look of caption text.
-10. Make strikethroughs more obvious.
-11. Soften the shape of big boxy elements.
-12. Finally, limit width on a high element so text is more readable. (The only class!)
+7. Constrain images and iframes to size
+8. Add spacing to sectional elements
+9. Use more common, consistent, and attractive colors.
+10. Style and color buttons to look more like web buttons.
+11. Change the look of caption text.
+12. Make strikethroughs more obvious.
+13. Soften the shape of big boxy elements.
+14. Finally, limit width on a high element so text is more readable. (The only class!)
