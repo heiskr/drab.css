@@ -537,7 +537,8 @@ button, [type=button] {
 }
 
 button[type=reset], [type=reset] {
-  background: #ffb1c0; /* hsluv(0, 100, 80) */
+  background: #ccc; 
+  color: #930002; /* hsluv(12, 100, 30) */
 }
 
 button:disabled, [type=submit]:disabled, [type=button]:disabled, [type=reset]:disabled {
