@@ -499,15 +499,19 @@ a {
 }
 
 code, samp, kbd, tr:nth-child(even) {
-  background: #f7f7f7;
+  background: #f7f9fc; /* hsluv(240, 50, 98) */
 }
 
 thead, tfoot {
-  background: #eee;
+  background: #ecf1f8; /* hsluv(240, 50, 95) */
 }
 
 hr, blockquote, fieldset, input, textarea {
-  border-color: #ccc;
+  border-color: #bcc8d5; /* hsluv(240, 25, 80) */
+}
+
+::placeholder {
+  color: 6a7988; /* hsluv(240, 25, 50) */
 }
 
 mark {
@@ -538,13 +542,13 @@ button, [type=button] {
 }
 
 button[type=reset], [type=reset] {
-  background: #eee; 
+  background: #ecf1f8; /* hsluv(240, 50, 95) */
   color: #d80005; /* hsluv(12, 100, 45) */
 }
 
 button:disabled, [type=submit]:disabled, [type=button]:disabled, [type=reset]:disabled {
-  color: #666;
-  background: #f7f7f7;
+  color: #616c77; /* hsluv(240, 20, 45) */
+  background: #f7f9fc; /* hsluv(240, 50, 98) */
   box-shadow: none;
 }
 
@@ -561,7 +565,7 @@ caption, figcaption {
 /* 12. Make strikethroughs more obvious. */
 
 del, s {
-  color: #666;
+  color: #616c77; /* hsluv(240, 20, 45) */
 }
 
 
