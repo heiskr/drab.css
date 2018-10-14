@@ -511,7 +511,7 @@ hr, blockquote, fieldset, input, textarea {
 }
 
 ::placeholder {
-  color: 6a7988; /* hsluv(240, 25, 50) */
+  color: #6a7988; /* hsluv(240, 25, 50) */
 }
 
 mark {
