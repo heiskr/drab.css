@@ -503,7 +503,7 @@ code, samp, kbd, tr:nth-child(even) {
 }
 
 thead, tfoot {
-  background: #ecf1f8; /* hsluv(240, 50, 95) */
+  background: #eef1f5; /* hsluv(240, 30, 95) */
 }
 
 hr, blockquote, fieldset, input, textarea {
@@ -542,7 +542,7 @@ button, [type=button] {
 }
 
 button[type=reset], [type=reset] {
-  background: #ecf1f8; /* hsluv(240, 50, 95) */
+  background: #eef1f5; /* hsluv(240, 30, 95) */
   color: #d80005; /* hsluv(12, 100, 45) */
 }
 
