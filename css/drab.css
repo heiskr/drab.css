@@ -491,7 +491,7 @@ header, section, footer {
 /* 9. Use more common, consistent, and attractive colors */
 
 body, input, textarea, button {
-  color: #111;
+  color: #333;
 }
 
 a {
