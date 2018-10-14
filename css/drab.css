@@ -537,7 +537,7 @@ button, [type=button] {
 }
 
 button[type=reset], [type=reset] {
-  background: #ccc; 
+  background: #eee; 
   color: #930002; /* hsluv(12, 100, 30) */
 }
 
