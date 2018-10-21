@@ -415,6 +415,7 @@ legend, input, textarea {
 
 input, textarea {
   padding: calc(0.25rem - 1px) calc(0.5rem - 1px);
+  max-width: 100%;
 }
 
 button, [type=submit], [type=button], [type=reset] {
