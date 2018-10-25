@@ -532,7 +532,8 @@ mark {
 }
 
 :focus {
-  outline: 2px solid #93ccff; /*  hsluv(240, 100, 80) */
+  outline: 0;
+  box-shadow: 0 0 0 2px #93ccff; /*  hsluv(240, 100, 80) */
 }
 
 
