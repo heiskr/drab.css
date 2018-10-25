@@ -508,7 +508,7 @@ a:hover {
 }
 
 code, samp, kbd, tr:nth-child(even) {
-  background: #f7f9fc; /* hsluv(240, 50, 98) */
+  background: #f8f9fc; /* hsluv(240, 40, 98) */
 }
 
 thead, tfoot {
