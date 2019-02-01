@@ -1,0 +1,23 @@
+{
+  "name": "drab.css",
+  "version": "1.0.0",
+  "description": "An extremely boring set of CSS. If you have a page of basic, unstyled HTML, and want to do almost no work, just pop this in.",
+  "main": "css/drab.css",
+  "scripts": {
+    "prepublish": "cat node_modules/normalize.css/normalize.css css/drab-partial.css > drab.css",
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heiskr/drab.css.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/heiskr/drab.css/issues"
+  },
+  "homepage": "https://github.com/heiskr/drab.css#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
