@@ -35,7 +35,7 @@ pre, code, samp, kbd, var,
     Monaco,
     "Andale Mono",
     monospace;
-  font-size: 0.9;
+  font-size: 90%;
 }
 
 /* 3. Apply more common `line-height` and use an `8px` vertical rhythm. */
