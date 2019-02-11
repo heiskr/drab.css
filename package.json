@@ -4,7 +4,9 @@
   "description": "An extremely boring set of CSS. If you have a page of basic, unstyled HTML, and want to do almost no work, just pop this in.",
   "main": "css/drab.css",
   "scripts": {
-    "prepublish": "cat node_modules/normalize.css/normalize.css css/drab-partial.css > css/drab.css",
+    "build": "cat node_modules/normalize.css/normalize.css css/drab-partial.css > css/drab.css",
+    "min": "cleancss -o css/drab.min.css css/drab.css",
+    "prepublish": "npm run build && npm run min",
     "test": "exit 0"
   },
   "repository": {
@@ -19,5 +21,9 @@
   "homepage": "https://github.com/heiskr/drab.css#readme",
   "dependencies": {
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "clean-css": "^4.2.1",
+    "clean-css-cli": "^4.2.1"
   }
 }

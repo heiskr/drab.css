@@ -19,14 +19,14 @@ See a plain HTML page [before](https://heiskr.com/drab.css/demo/before) and [aft
 1. Apply `border-box` sizing to all elements.
 2. Apply system fonts.
 3. Apply more common `line-height` and use an `8px` vertical rhythm.
-4. Use consistent border sizes and styles.
-5. Tighten left on list like elements.
-6. Apply more common spacing on `table`s.
-7. Constrain images and iframes to size
-8. Add spacing to sectional elements
-9. Use more common, consistent, and attractive colors.
-10. Style and color buttons to look more like web buttons.
-11. Change the look of caption text.
-12. Make strikethroughs more obvious.
-13. Soften the shape of big boxy elements.
+4. Constrain elements to width.
+5. Use consistent border sizes and styles.
+6. Tighten left on list like elements.
+7. Apply more common spacing on `table`s.
+8. Add spacing to sectional elements.
+9. Style buttons to look more like web buttons.
+10. Change the look of caption text.
+11. Make strikethroughs more obvious.
+12. Soften the shape of big boxy elements.
+13. Use more common, consistent, and attractive colors.
 14. Finally, limit width on a high element so text is more readable. (The only class!)
