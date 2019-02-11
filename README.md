@@ -3,7 +3,7 @@
 An extremely boring set of CSS.
 If you have a page of basic, unstyled HTML, and want to do almost no work, just pop this in.
 
-`<link rel="stylesheet" href="https://heiskr.com/drab.css/css/drab.css">`
+`<link rel="stylesheet" href="https://heiskr.com/drab.css/css/drab.min.css">`
 
 Also, you can use the `page` class to restrict the main portion of the page to a readable line length.
 
