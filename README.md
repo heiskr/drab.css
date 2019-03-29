@@ -25,8 +25,10 @@ See a plain HTML page [before](https://heiskr.com/drab.css/demo/before) and [aft
 7. Apply more common spacing on `table`s.
 8. Add spacing to sectional elements.
 9. Style buttons to look more like web buttons.
-10. Change the look of caption text.
-11. Make strikethroughs more obvious.
-12. Soften the shape of big boxy elements.
-13. Use more common, consistent, and attractive colors.
-14. Finally, limit width on a high element so text is more readable. (The only class!)
+10. Tweak style of progress elements.
+11. Change the look of caption text.
+12. Make strikethroughs more obvious.
+13. More clickable summary.
+14. Soften the shape of big boxy elements.
+15. Use more common, consistent, and attractive colors.
+16. Finally, limit width on a high element so text is more readable. (The only class!)
