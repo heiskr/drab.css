@@ -692,7 +692,8 @@ body,
 input,
 textarea,
 button {
-  color: #2a313d; /* 250-30-20 */
+  color: #eff1f5; /* 250-30-95 */
+  background: #171c24; /* 250-30-10 */
 }
 
 pre,
@@ -700,12 +701,12 @@ code,
 samp,
 kbd,
 tr:nth-child(even) {
-  background: #f8f9fb; /* 250-30-98 */
+  background: #202631; /* 250-30-15 */
 }
 
 thead,
 tfoot {
-  background: #eff1f5; /* 250-30-95 */
+  background: #2a313d; /* 250-30-20 */
 }
 
 hr,
@@ -713,7 +714,7 @@ blockquote,
 fieldset,
 input,
 textarea {
-  border-color: #bec7d8; /* 250-30-80 */
+  border-color: #3e4759; /* 250-30-30 */
 }
 
 ::placeholder {
@@ -721,11 +722,12 @@ textarea {
 }
 
 a {
-  color: #007ad1; /* 250-100-50 */
+  color: #0094fc; /* 250-100-60 */
 }
 
 mark {
-  background: #fff489; /* 80-100-95 */
+  background: #4d4800; /* 80-100-30 */
+  color: white;
 }
 
 [type='submit'] {
@@ -735,43 +737,43 @@ mark {
 
 button,
 [type='button'] {
-  background: #a8c8ff; /* 250-100-80 */
+  background: #004880; /* 250-100-30 */
 }
 
 button[type='reset'],
 [type='reset'] {
-  color: #d80005; /* 12-100-45 */
-  background: #eff1f5; /* 250-30-95 */
+  color: #ff5354; /* 12-100-60 */
+  background: #2a313d; /* 250-30-20 */
 }
 
 button:disabled,
 [type='submit']:disabled,
 [type='button']:disabled,
 [type='reset']:disabled {
-  color: #5d6b84; /* 250-30-45 */
-  background: #f8f9fb; /* 250-30-98 */
+  color: #7f91b2; /* 250-30-60 */
+  background: #2a313d; /* 250-30-20 */
 }
 
 :focus {
   outline: 0;
-  box-shadow: 0 0 0 2px #a8c8ff; /* 250-100-80 */
+  box-shadow: 0 0 0 2px #0060a7; /* 250-100-40 */
 }
 
 input:hover,
 textarea:hover {
-  border-color: #9facc6; /* 250-30-70 */
+  border-color: #535f75; /* 250-30-40 */
 }
 
 progress,
 progress::-webkit-progress-bar {
-  background: #eff1f5; /* 250-30-95 */
+  background: #2a313d; /* 250-30-20 */
 }
 
 progress::-webkit-progress-value {
-  background: #a8c8ff; /* 250-100-80 */
+  background: #0094fc; /* 250-100-60 */
 }
 
 /* Separate, otherwise breaks Safari/Chrome */
 progress::-moz-progress-bar {
-  background: #a8c8ff; /* 250-100-80 */
+  background: #0094fc; /* 250-100-60 */
 }
