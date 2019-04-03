@@ -275,9 +275,9 @@ mark {
 }
 
 img,
+iframe,
 input,
 textarea,
-button,
 button,
 [type='submit'],
 [type='button'],
