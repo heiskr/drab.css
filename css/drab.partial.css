@@ -12,9 +12,7 @@ body,
 input,
 textarea,
 button {
-  /* https://css-tricks.com/snippets/css/system-font-stack */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
 pre,
@@ -29,9 +27,8 @@ var,
 [type='week'],
 [type='datetime'],
 [type='datetime-local'] {
-  /* https://www.client9.com/css-system-font-stack-monospace-v2 */
   font-family: 'SFMono-Regular', Menlo, Consolas, Inconsolata, 'Liberation Mono',
-    Monaco, 'Andale Mono', monospace;
+    monospace;
 }
 
 /* 3. Apply more common `line-height` and use an `8px` vertical rhythm. */

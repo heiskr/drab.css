@@ -54,11 +54,11 @@ textarea {
 }
 
 ::placeholder {
-  color: #697893; /* 250-30-50 */
+  color: #5d6b84; /* 250-30-45 */
 }
 
 a {
-  color: #007ad1; /* 250-100-50 */
+  color: #006dbc; /* 250-100-45 */
 }
 
 mark {
@@ -67,7 +67,7 @@ mark {
 
 [type='submit'] {
   color: white;
-  background: #007ad1; /* 250-100-50 */
+  background: #006dbc; /* 250-100-45 */
 }
 
 button,
