@@ -125,6 +125,10 @@ var,
   line-height: 1.71428571429; /* 24px */
 }
 
+progress {
+  height: 0.5rem;
+}
+
 /* 4. Constrain elements to width. */
 
 img,
@@ -155,7 +159,12 @@ blockquote {
   border-left: 1px solid;
 }
 
-iframe {
+iframe,
+button,
+[type='button'],
+[type='submit'],
+[type='reset'],
+progress {
   border: none;
 }
 
@@ -213,13 +222,6 @@ footer {
 
 button,
 [type='submit'],
-[type='button'],
-[type='reset'] {
-  border: 0;
-}
-
-button,
-[type='submit'],
 [type='button'] {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -228,41 +230,28 @@ button,
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-button:disabled,
-[type='submit']:disabled,
-[type='button']:disabled,
-[type='reset']:disabled {
-  box-shadow: none;
-}
-
-/* 10. Tweak style of progress elements. */
-
-progress {
-  height: 0.5rem;
-  border: none;
-}
-
-/* 11. Change the look of caption text. */
+/* 10. Change the look of caption text. */
 
 caption,
 figcaption {
   font-style: italic;
 }
 
-/* 12. Make strikethroughs more obvious. */
+/* 11. Make strikethroughs more obvious. */
 
 del,
-s {
+s,
+time {
   opacity: 0.7;
 }
 
-/* 13. More clickable summary. */
+/* 12. More clickable summary. */
 
 summary {
   cursor: pointer;
 }
 
-/* 14. Soften the shape of big boxy elements. */
+/* 13. Soften the shape of big boxy elements. */
 
 code,
 samp,
@@ -296,11 +285,125 @@ progress::-moz-progress-bar {
   border-radius: 0.25rem;
 }
 
-/* 15. Use more common, consistent, and attractive colors. */
+/* 14. Lighten inactive elements. */
 
-/* See themes: light, dark... */
+:disabled,
+::placeholder {
+  opacity: 0.5;
+}
 
-/* 16. Finally, limit width on a high element so text is more readable. (The only class!) */
+:disabled {
+  box-shadow: none;
+}
+
+/* 15. Remove shadow on iOS. */
+
+input[type='text'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* 16. Use more common, consistent, and attractive colors. */
+
+body,
+input,
+textarea,
+button,
+mark {
+  color: var(--s0);
+  background: var(--s4);
+}
+
+pre,
+code,
+samp,
+kbd,
+tr:nth-child(even) {
+  background: var(--s3);
+}
+
+thead,
+tfoot,
+progress,
+progress::-webkit-progress-bar {
+  background: var(--s2);
+}
+
+hr,
+blockquote,
+fieldset,
+input,
+textarea {
+  border-color: var(--s1);
+}
+
+a {
+  color: var(--i0);
+}
+
+:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--i1);
+}
+
+button,
+[type='button'] {
+  background: var(--i1);
+}
+
+[type='submit'] {
+  color: var(--s4);
+  background: var(--i0);
+}
+
+[type='reset'] {
+  color: var(--b0);
+  background: var(--s2);
+}
+
+progress::-webkit-progress-value {
+  background: var(--i1);
+}
+
+/* Separate, otherwise breaks Safari/Chrome */
+progress::-moz-progress-bar {
+  background: var(--i1);
+}
+
+mark {
+  background: var(--h0);
+}
+
+/* Colors from http://www.hsluv.org/ */
+
+:root {
+  --s4: #ffffff; /* 250- 30-100 */
+  --s3: #f8f9fb; /* 250- 30- 98 */
+  --s2: #eff1f5; /* 250- 30- 95 */
+  --s1: #bec7d8; /* 250- 30- 80 */
+  --s0: #2a313d; /* 250- 30- 20 */
+  --i1: #a8c8ff; /* 250-100- 80 */
+  --i0: #006dbc; /* 250-100- 45 */
+  --b0: #d80005; /*  12-100- 45 */
+  --h0: #fff489; /*  80-100- 95 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --s4: #171c24; /* 250- 30- 10 */
+    --s3: #202631; /* 250- 30- 15 */
+    --s2: #2a313d; /* 250- 30- 20 */
+    --s1: #52606f; /* 250- 30- 40 */
+    --s0: #eff1f5; /* 250- 30- 95 */
+    --i1: #0060a7; /* 250-100- 40 */
+    --i0: #0094fc; /* 250-100- 60 */
+    --b0: #ff5354; /*  12-100- 60 */
+    --h0: #4d4800; /*  80-100- 30 */
+  }
+}
+
+/* 17. Finally, limit width on a high element so text is more readable. (The only class!) */
 
 .page {
   margin: 0 auto;

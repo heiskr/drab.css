@@ -4,12 +4,10 @@
   "description": "An extremely boring set of CSS. If you have a page of basic, unstyled HTML, and want to do almost no work, just pop this in.",
   "main": "css/drab.css",
   "scripts": {
-    "build-light": "cat node_modules/normalize.css/normalize.css css/drab.partial.css css/theme.light.css > css/drab.css",
-    "build-dark": "cat node_modules/normalize.css/normalize.css css/drab.partial.css css/theme.dark.css > css/drab.dark.css",
-    "min-light": "cleancss -o css/drab.min.css css/drab.css",
-    "min-dark": "cleancss -o css/drab.dark.min.css css/drab.dark.css",
+    "build": "cat node_modules/normalize.css/normalize.css css/drab.partial.css > css/drab.css",
+    "min": "cleancss -o css/drab.min.css css/drab.css",
     "pretty": "prettier \"css/*.css\" --write",
-    "prepublish": "npm run build-light && npm run build-dark && npm run min-light && npm run min-dark && npm run pretty",
+    "prepublish": "npm run build && npm run min && npm run pretty",
     "test": "exit 0"
   },
   "repository": {
