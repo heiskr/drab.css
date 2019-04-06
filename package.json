@@ -8,7 +8,8 @@
     "build-dark": "cat node_modules/normalize.css/normalize.css css/drab.partial.css css/theme.dark.css > css/drab.dark.css",
     "min-light": "cleancss -o css/drab.min.css css/drab.css",
     "min-dark": "cleancss -o css/drab.dark.min.css css/drab.dark.css",
-    "prepublish": "npm run build-light && npm run build-dark && npm run min-light && npm run min-dark",
+    "pretty": "prettier \"css/*.css\" --write",
+    "prepublish": "npm run build-light && npm run build-dark && npm run min-light && npm run min-dark && npm run pretty",
     "test": "exit 0"
   },
   "repository": {
