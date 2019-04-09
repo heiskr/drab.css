@@ -33,3 +33,7 @@ See a plain HTML page [before](https://heiskr.com/drab.css/demo/before) and [aft
 15. Remove shadow on iOS.
 16. Use more common, consistent, and attractive colors.
 17. Finally, limit width on a high element so text is more readable. (The only class!)
+
+## Alternatives
+
+The "Very Lightweight" section of [troxler/awesome-css-frameworks](https://github.com/troxler/awesome-css-frameworks#very-lightweight) has several stylesheets with few to no classes.
