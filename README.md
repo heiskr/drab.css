@@ -32,6 +32,7 @@ See a plain HTML page [before](https://heiskr.com/drab.css/demo/before) and [aft
 14. Lighten inactive elements.
 15. Remove shadow on iOS.
 16. Use more common, consistent, and attractive colors.
+  - This includes a media query for `prefers-color-scheme` for dark mode users.
 17. Finally, limit width on a high element so text is more readable. (The only class!)
 
 ## Alternatives
