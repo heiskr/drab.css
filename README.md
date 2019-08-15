@@ -9,29 +9,64 @@ See a plain HTML page [before](https://heiskr.com/drab.css/demo/before) and [aft
 
 ## Goals
 
-- Bare minimum number of changes on top of `normalize.css`.
-- No classes, just add boring style to basic HTML tags.
+- Minimum number of changes on top of `normalize.css`.
+- No classes.
+- Use styles that are on ≥90% of websites.
 
 ## Changes
 
-1. Apply `border-box` sizing to all elements.
-2. Apply system fonts.
-3. Apply more common `line-height` and use an `8px` vertical rhythm.
-4. Constrain elements to width.
-5. Use consistent border sizes and styles.
-6. Tighten left on list like elements.
-7. Apply more common spacing on `table`s.
-8. Add spacing to sectional elements.
-9. Style buttons to look more like web buttons.
-10. Change the look of caption text.
-11. Make strikethroughs more obvious.
-12. More clickable summary.
-13. Soften the shape of big boxy elements.
-14. Lighten inactive elements.
-15. Remove shadow on iOS.
-16. Use more common, consistent, and attractive colors.
-    - This includes a media query for `prefers-color-scheme` for dark mode users.
-17. Finally, limit width on body so text is more readable.
+In an effort reduce the count of changes, here is a listing of all the significant changes on top of normalize.
+
+### Global
+
+1. Apply `border-box` sizing to all.
+2. Apply system font to all.
+3. Apply system monospace font to matching.
+4. Limit width on body so text is easier to read.
+5. Standardize line-height and font-size.
+6. Standardize focus states.
+7. Round corners. \*
+8. Lighten text color slightly.
+9. Use the same border color everywhere.
+
+### Block
+
+1. Adjust headers for 8px rhythm.
+2. Tighten left on lists.
+3. Add a left border to blockquote.
+4. Adjust blockquote margin for 8px rhythm.
+5. Adjust figure margins for 8px rhythm.
+6. Constrain image and iframe to width to body.
+7. Update progres height to 8px rhythm.
+8. Adjust hr margin for 8px rhythm.
+9. Make summary look easier to click. \*
+10. Increase whitespace around header, section, and footer. \*
+11. Update progress colors. \*
+
+### Inline
+
+1. Update small and monospace font size for 8px rhythm.
+2. Make strikethroughs more obvious.
+3. Adjust link color, removing visited color.
+4. Update mark colors.
+
+### Form
+
+1. Constrain form to body width.
+2. Remove shadow on iOS.
+3. Lighten disabled.
+4. Use the same border-width on form.
+5. Add a little padding to input and button.
+6. Update button colors.
+
+### Table
+
+1. Use padding not border-spacing on tables.
+2. Align everything left in table cells by default.
+3. Add zebra-striping to tables. \*
+4. Add color to separate thead and tfoot.
+
+\* – These styles are a bit more opinionated and would be outside (3) above.
 
 ## Alternatives
 
