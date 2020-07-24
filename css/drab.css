@@ -397,8 +397,7 @@ textarea,
 select,
 button {
   /* The font family comes from Bootstrap 4. */
-  /* Public Sans first to support cross-os branding when user installed. */
-  font: 16px/1.5 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font: 16px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
   color: var(--s0);
   background: var(--s4);
