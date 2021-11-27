@@ -28,51 +28,36 @@
   }
 }
 
-/* A1. Apply `border-box` sizing to all. */
-/* A9. Use the same border color everywhere. */
+/* A6. Use the same border color everywhere. */
 
 * {
-  box-sizing: border-box;
   border: 0 solid var(--s1);
 }
 
-/* A2. Apply system font to all. */
-/* A5. Standardize line-height and font-size. */
-/* A8. Lighten text color slightly. */
+/* A2. Standardize line-height and font-size. */
+/* A5. Lighten text color slightly. */
 
 html,
 input,
 textarea,
 select,
 button {
-  /* The font family comes from Bootstrap 4. */
-  font: 16px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--s0);
   background: var(--s4);
 }
 
-/* A3. Apply system monospace font to matching. */
-
 pre,
 code,
 samp,
-kbd,
-var,
-[type='tel'],
-[type='number'],
-[type='date'],
-[type='month'],
-[type='week'],
-[type='datetime'],
-[type='datetime-local'] {
-  /* This font family comes from Bootstrap 4. */
+kbd {
   /* 14px / 24px */
-  font: 0.875rem/1.7142 SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', monospace;
+  font-size: 0.875rem;
+  line-height: 1.7142;
 }
 
-/* A4. Limit width on body so text is easier to read. */
+/* A1. Limit width on body so text is easier to read. */
 
 body {
   margin: 0 auto;
@@ -80,14 +65,14 @@ body {
   padding: 1rem; /* 16px */
 }
 
-/* A6. Standardize focus states. */
+/* A3. Standardize focus states. */
 
 :focus {
   outline: 0;
   box-shadow: 0 0 0 2px var(--i1);
 }
 
-/* A7. Round corners. */
+/* A4. Round corners. */
 
 *:not(svg):not(th),
 progress::-webkit-progress-value {

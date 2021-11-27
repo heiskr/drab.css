@@ -19,15 +19,12 @@ In an effort reduce the count of changes, here is a listing of all the significa
 
 ### Global
 
-1. Apply `border-box` sizing to all.
-2. Apply system font to all.
-3. Apply system monospace font to matching.
-4. Limit width on body so text is easier to read.
-5. Standardize line-height and font-size.
-6. Standardize focus states.
-7. Round corners. \*
-8. Lighten text color slightly.
-9. Use the same border color everywhere.
+1. Limit width on body so text is easier to read.
+2. Standardize line-height and font-size.
+3. Standardize focus states.
+4. Round corners. \*
+5. Lighten text color slightly.
+6. Use the same border color everywhere.
 
 ### Block
 
