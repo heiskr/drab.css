@@ -287,38 +287,34 @@ summary {
 }
 /*! drab.css v0 | Apache-2.0 License | github.com/heiskr/drab.css */
 
-/* Colors from http://www.hsluv.org/ */
-
 :root {
-  --s4: #ffffff; /* 250, 30,100 */
-  --s3: #f8f9fb; /* 250, 30, 98 */
-  --s2: #eff1f5; /* 250, 30, 95 */
-  --s1: #bec7d8; /* 250, 30, 80 */
-  --s0: #2a313d; /* 250, 30, 20 */
-  --i1: #a8c8ff; /* 250,100, 80 */
-  --i0: #006dbc; /* 250,100, 45 */
-  --b0: #d80005; /*  12,100, 45 */
-  --h0: #fff489; /*  80,100, 95 */
+  --color: oklch(30% 0.007 260);
+  --background: oklch(100% 0.007 260);
+  --area: oklch(98% 0.007 260);
+  --border: oklch(80% 0.007 260);
+  --active: oklch(50% 0.15 260);
+  --active-background: oklch(80% 0.15 260);
+  --bad: oklch(60% 0.2 30);
+  --mark: oklch(95% 0.1 100);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --s4: #171c24; /* 250, 30, 10 */
-    --s3: #202631; /* 250, 30, 15 */
-    --s2: #2a313d; /* 250, 30, 20 */
-    --s1: #52606f; /* 250, 30, 40 */
-    --s0: #eff1f5; /* 250, 30, 95 */
-    --i1: #0060a7; /* 250,100, 40 */
-    --i0: #0094fc; /* 250,100, 60 */
-    --b0: #ff5354; /*  12,100, 60 */
-    --h0: #4d4800; /*  80,100, 30 */
+    --color: oklch(90% 0.007 260);
+    --background: oklch(15% 0.007 260);
+    --area: oklch(20% 0.007 260);
+    --border: oklch(45% 0.007 260);
+    --active: oklch(60% 0.15 260);
+    --active-background: oklch(40% 0.15 260);
+    --bad: oklch(60% 0.2 30);
+    --mark: oklch(30% 0.02 100);
   }
 }
 
 /* A6. Use the same border color everywhere. */
 
 * {
-  border: 0 solid var(--s1);
+  border: 0 solid var(--border);
 }
 
 /* A2. Standardize line-height and font-size. */
@@ -331,8 +327,8 @@ select,
 button {
   font-size: 16px;
   line-height: 1.5;
-  color: var(--s0);
-  background: var(--s4);
+  color: var(--color);
+  background: var(--background);
 }
 
 pre,
@@ -356,18 +352,13 @@ body {
 
 :focus {
   outline: 0;
-  box-shadow: 0 0 0 2px var(--i1);
+  box-shadow: 0 0 0 2px var(--active-background);
 }
 
 /* A4. Round corners. */
 
-*:not(svg):not(th),
+*:not(svg):not(th):not(td),
 progress::-webkit-progress-value {
-  border-radius: 0.25rem;
-}
-
-/* Separate, otherwise breaks Safari and Chrome */
-progress::-moz-progress-bar {
   border-radius: 0.25rem;
 }
 
@@ -476,12 +467,12 @@ footer {
 /* B11. Update progress colors. */
 
 progress::-webkit-progress-value {
-  background: var(--i1);
+  background: var(--active-background);
 }
 
 /* Separate, otherwise breaks Safari/Chrome */
 progress::-moz-progress-bar {
-  background: var(--i1);
+  background: var(--active-background);
 }
 
 /* T4. Add color to separate thead and tfoot. */
@@ -491,7 +482,7 @@ thead,
 tfoot,
 progress,
 progress::-webkit-progress-bar {
-  background: var(--s2);
+  background: var(--area);
 }
 
 /* I1. Update small for 8px rhythm. */
@@ -512,14 +503,14 @@ time {
 /* I3. Adjust link color, removing visited color. */
 
 a {
-  color: var(--i0);
+  color: var(--active);
 }
 
 /* I4. Update mark colors. */
 
 mark {
-  color: var(--s0);
-  background: var(--h0);
+  color: var(--color);
+  background: var(--mark);
 }
 
 /* F2. Remove shadow on iOS. */
@@ -527,6 +518,7 @@ mark {
 input:not([type='checkbox']):not([type='radio']):not([type='range']),
 textarea {
   -webkit-appearance: none;
+  appearance: none;
 }
 
 /* F3. Lighten disabled. */
@@ -565,17 +557,23 @@ button,
 
 button,
 [type='button'] {
-  background: var(--i1);
+  background: var(--active-background);
 }
 
 [type='submit'] {
-  color: var(--s4);
-  background: var(--i0);
+  color: var(--background);
+  background: var(--active);
 }
 
 [type='reset'] {
-  color: var(--b0);
-  background: var(--s2);
+  color: var(--bad);
+  background: var(--area);
+}
+
+/* F7. Block-level labels. */
+
+label {
+  display: block;
 }
 
 /* T1. Use padding not border-spacing on tables. */
@@ -606,8 +604,8 @@ th {
   text-align: left;
 }
 
-/* T3. Add zebra-striping to tables. */
+/* T3. Add horizontal rules to tables. */
 
-tr:nth-child(even) {
-  background: var(--s3);
+tr:not(:last-child) td {
+  border-bottom-width: 1px;
 }

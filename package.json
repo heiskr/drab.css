@@ -6,9 +6,9 @@
   "scripts": {
     "build-main": "cat node_modules/modern-normalize/modern-normalize.css css/drab.partial.css > css/drab.css",
     "build-util": "cat css/drab.css css/drabutil.partial.css > css/drabutil.css",
-    "min-main": "cleancss -o css/drab.min.css css/drab.css",
-    "min-util": "cleancss -o css/drabutil.min.css css/drabutil.css",
-    "pretty": "prettier \"css/*.css\" --write",
+    "min-main": "postcss css/drab.css -o css/drab.min.css",
+    "min-util": "postcss css/drabutil.css -o css/drabutil.min.css",
+    "pretty": "prettier \"css/*.css\" index.html --write",
     "prepublish": "npm run build-main && npm run build-util && npm run min-main && npm run min-util && npm run pretty",
     "test": "exit 0"
   },
@@ -23,9 +23,11 @@
   },
   "homepage": "https://github.com/heiskr/drab.css#readme",
   "devDependencies": {
-    "clean-css": "^4.2.1",
-    "clean-css-cli": "^4.2.1",
+    "@csstools/postcss-oklab-function": "^1.1.1",
+    "cssnano": "^5.1.14",
     "husky": "^1.3.1",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
     "prettier": "^1.16.4",
     "pretty-quick": "^1.10.0"
   },

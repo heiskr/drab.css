@@ -5,11 +5,11 @@ If you have a page of basic, unstyled HTML, and want to do almost no work, just 
 
 `<link rel="stylesheet" href="https://heiskr.com/drab.css/css/drab.min.css">`
 
-See a plain HTML page [before](https://heiskr.com/drab.css/demo/before) and [after](https://heiskr.com/drab.css/demo/after).
+See a [demo](https://heiskr.com/drab.css).
 
 ## Goals
 
-- Minimum number of changes on top of `normalize.css`.
+- Minimum number of changes on top of normalization.
 - No classes.
 - Use styles that are on ≥90% of websites.
 
@@ -55,22 +55,21 @@ In an effort reduce the count of changes, here is a listing of all the significa
 4. Use the same border-width on form.
 5. Add a little padding to input and button.
 6. Update button colors.
+7. Block-level labels. \*
 
 ### Table
 
 1. Use padding not border-spacing on tables.
 2. Align everything left in table cells by default.
-3. Add zebra-striping to tables. \*
+3. Add horizontal rules to tables. \*
 4. Add color to separate thead and tfoot.
 
 \* – These styles are a bit more opinionated and would be outside (3) above.
 
 ## Alternatives
 
-The "Very Lightweight" section of [troxler/awesome-css-frameworks](https://github.com/troxler/awesome-css-frameworks#very-lightweight) has several stylesheets with few to no classes.
-
-I have a second sheet as well,
+A second sheet,
 
 `<link rel="stylesheet" href="https://heiskr.com/drab.css/css/drabutil.min.css">`
 
-Which includes some [minor utility classes](https://github.com/heiskr/drab.css/blob/master/css/drabutil.partial.css) with a standardized name format.
+includes some [minor utility classes](https://github.com/heiskr/drab.css/blob/master/css/drabutil.partial.css) with a consistent name format.
