@@ -4,12 +4,10 @@
   "description": "An extremely boring set of CSS. If you have a page of basic, unstyled HTML, and want to do almost no work, just pop this in.",
   "main": "css/drab.css",
   "scripts": {
-    "build-main": "cat node_modules/modern-normalize/modern-normalize.css css/drab.partial.css > css/drab.css",
-    "build-util": "cat css/drab.css css/drabutil.partial.css > css/drabutil.css",
-    "min-main": "postcss css/drab.css -o css/drab.min.css",
-    "min-util": "postcss css/drabutil.css -o css/drabutil.min.css",
+    "build-main": "cat node_modules/modern-normalize/modern-normalize.css css/drab.partial.css | postcss -o css/drab.min.css",
+    "build-util": "cat node_modules/modern-normalize/modern-normalize.css css/drab.partial.css css/drabutil.partial.css | postcss -o css/drabutil.min.css",
     "pretty": "prettier \"css/*.css\" index.html --write",
-    "prepublish": "npm run build-main && npm run build-util && npm run min-main && npm run min-util && npm run pretty",
+    "prepublish": "npm run build-main && npm run build-util && npm run pretty",
     "test": "exit 0"
   },
   "repository": {
