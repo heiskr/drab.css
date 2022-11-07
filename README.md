@@ -61,8 +61,7 @@ In an effort reduce the count of changes, here is a listing of all the significa
 
 1. Use padding not border-spacing on tables.
 2. Align everything left in table cells by default.
-3. Add horizontal rules to tables. \*
-4. Add color to separate thead and tfoot.
+3. Add horizontal rules to tables.
 
 \* – These styles are a bit more opinionated and would be outside (3) above.
 

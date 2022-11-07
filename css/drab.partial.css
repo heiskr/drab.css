@@ -188,11 +188,8 @@ progress::-moz-progress-bar {
   background: var(--active-background);
 }
 
-/* T4. Add color to separate thead and tfoot. */
 /* B11. Update progress colors. */
 
-thead,
-tfoot,
 progress,
 progress::-webkit-progress-bar {
   background: var(--area);
@@ -319,6 +316,13 @@ th {
 
 /* T3. Add horizontal rules to tables. */
 
-tr:not(:last-child) td {
+tr:not(:last-child) td,
+thead th,
+thead td {
   border-bottom-width: 1px;
+}
+
+tfoot th,
+tfoot td {
+  border-top-width: 1px;
 }
