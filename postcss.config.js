@@ -3,6 +3,8 @@ module.exports = {
     require('@csstools/postcss-oklab-function')({
       subFeatures: { displayP3: false },
     }),
-    require('cssnano')({}),
+    require('cssnano')({
+      preset: 'advanced',
+    }),
   ],
 }
