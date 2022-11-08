@@ -3,7 +3,7 @@
 An extremely boring set of CSS.
 If you have a page of basic, unstyled HTML, and want to do almost no work, just pop this in.
 
-`<link rel="stylesheet" href="https://heiskr.com/drab.css/css/drab.min.css">`
+`<link rel="stylesheet" href="https://unpkg.com/drab.css/css/drab.min.css">`
 
 See a [demo](https://heiskr.com/drab.css).
 
@@ -69,6 +69,6 @@ In an effort reduce the count of changes, here is a listing of all the significa
 
 A second sheet,
 
-`<link rel="stylesheet" href="https://heiskr.com/drab.css/css/drabutil.min.css">`
+`<link rel="stylesheet" href="https://unpkg.com/drab.css/css/drabutil.min.css">`
 
 includes some [minor utility classes](https://github.com/heiskr/drab.css/blob/master/css/drabutil.partial.css) with a consistent name format.
