@@ -64,11 +64,3 @@ In an effort reduce the count of changes, here is a listing of all the significa
 3. Add horizontal rules to tables.
 
 \* – These styles are a bit more opinionated and would be outside (3) above.
-
-## Alternatives
-
-A second sheet,
-
-`<link rel="stylesheet" href="https://unpkg.com/drab.css/css/drabutil.min.css">`
-
-includes some [minor utility classes](https://github.com/heiskr/drab.css/blob/master/css/drabutil.partial.css) with a consistent name format.

@@ -4,18 +4,16 @@
   "description": "An extremely boring set of CSS. If you have a page of basic, unstyled HTML, and want to do almost no work, just pop this in.",
   "main": "css/drab.css",
   "scripts": {
-    "build-main": "cat node_modules/modern-normalize/modern-normalize.css css/drab.partial.css | postcss -o css/drab.min.css",
-    "build-util": "cat node_modules/modern-normalize/modern-normalize.css css/drab.partial.css css/drabutil.partial.css | postcss -o css/drabutil.min.css",
+    "build": "cat node_modules/modern-normalize/modern-normalize.css css/drab.partial.css | postcss -o css/drab.min.css",
     "pretty": "prettier \"css/*.css\" index.html --write",
-    "prepublish": "npm run build-main && npm run build-util && npm run pretty",
-    "test": "exit 0"
+    "prepublish": "npm run build && npm run pretty"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/heiskr/drab.css.git"
   },
-  "author": "",
-  "license": "Apache-2.0",
+  "author": "heiskr",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/heiskr/drab.css/issues"
   },
