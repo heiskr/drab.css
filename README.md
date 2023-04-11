@@ -34,7 +34,7 @@ In an effort reduce the count of changes, here is a listing of all the significa
 4. Adjust blockquote margin for 8px rhythm.
 5. Adjust figure margins for 8px rhythm.
 6. Constrain image and iframe to width to body.
-7. Update progres height to 8px rhythm.
+7. Update progress height to 8px rhythm.
 8. Adjust hr margin for 8px rhythm.
 9. Make summary look easier to click. \*
 10. Increase whitespace around header, section, and footer. \*
