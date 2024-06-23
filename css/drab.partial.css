@@ -14,8 +14,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color: oklch(90% 0.007 260);
-    --background: oklch(15% 0.007 260);
-    --area: oklch(20% 0.007 260);
+    --background: oklch(20% 0.007 260);
+    --area: oklch(30% 0.007 260);
     --border: oklch(45% 0.007 260);
     --active: oklch(60% 0.15 260);
     --active-background: oklch(40% 0.15 260);
